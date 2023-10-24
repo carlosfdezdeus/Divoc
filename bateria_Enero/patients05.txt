@@ -1,0 +1,6 @@
+Manolo_Martinez 87654321X 2002 1 1 F
+Luisa_Costa 24680246G 1961 0 1 T
+Angel_Garcia 13579135G 1942 1 0 S
+Maria_Pelaez 11223344B 1983 1 1 M
+Angela_Lopez 34567890V 1995 0 1 F
+this_is_24_characters_OK 11111111H 1984 1 0 F

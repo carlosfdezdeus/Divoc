@@ -1,0 +1,70 @@
+R
+
+It_must_say_it_is_too_long_to_accept
+_still_too_long_to_accept
+this_is_24_characters_OK
+
+123
+1234567890
+123456789
+ABCDEFGHI
+12345678A
+11111111H
+
+0
+-10
+123456789
+1899
+2021
+milnovecientos
+MCMXX
+1984
+
+p
+q
+s
+yn
+ny
+y n
+n y
+y
+
+p
+q
+s
+yn
+ny
+y n
+n y
+n
+
+g
+z
+F S
+T M
+ft
+mn
+F
+S
+
+123
+1234567890
+11111111H
+D
+
+123
+1234567890123
+11111111
+12345678Z
+L
+
+0
+-10
+123456789
+1899
+2021
+milnovecientos
+MCMXX
+1984
+x
+Y

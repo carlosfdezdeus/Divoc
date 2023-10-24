@@ -1,0 +1,64 @@
+--------------------------------------------------
+|                     DIVOC_                     |
+--------------------------------------------------
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Choose an option (RSDLPX): 
+Exit
+
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+Are you sure you want to exit the program? (y/n): 
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Exit
+
+Are you sure you want to exit the program? (y/n): 

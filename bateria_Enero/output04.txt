@@ -1,0 +1,76 @@
+--------------------------------------------------
+|                     DIVOC_                     |
+--------------------------------------------------
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Search
+
+DNI (9-9 char): 
+Unknown patient
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Discharge
+
+DNI (9-9 char): 
+Unknown patient
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+List
+
+Date [1900-2020]: 
+Patients born before 1910:
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Positives
+
+Positive patients:
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Exit
+
+Are you sure you want to exit the program? (y/n): 

@@ -1,0 +1,329 @@
+Estos ficheros contienen una batería de pruebas para evaluar el correcto
+funcionamiento de un programa que implemente la versión de divoc del
+proyecto Divoc
+
+Se asume la existencia de un Makefile con reglas para generar un programa
+con nombre = divoc
+
+Dado que el programa generado por el Makefile se llama "divoc", la forma
+de ejecutar la batería de pruebas es:
+
+
+./protocolo.pl divoc
+
+
+El archivo 'protocolo.pl" es un script de Perl.
+
+Si no tienes instalado Perl, debes instalarlo con:
+
+sudo apt install perl
+
+El script del protocolo debe tener permiso de ejecución. Es decir, si, tras
+extraer este archivo del archivo comprimido, no es ejecutable:
+
+usuario@maquina (carpeta)>ls -l *.pl
+-rw------- 1 usuario grupo 5340 12 mar 13:44 protocolo.pl
+
+Es necesario darle permisos de ejecución:
+
+usuario@maquina (carpeta)>chmod 700 *.pl
+usuario@maquina (carpeta)>ls -l *.pl
+-rwx------ 1 usuario grupo 5340 12 mar 13:44 protocolo.pl
+
+
+Este protocolo va llamando al programa sucesivas veces, de la forma:
+  
+./divoc < protoXX.txt > mi_salidaXX.txt
+  
+es decir, redirigiendo a su entrada estándar, en vez del teclado, el contenido
+de un fichero (protoXX.txt) que contiene entradas para el programa, y
+redirigiendo su salida, en vez de a la pantalla, a un fichero
+(mi_salidaXX.txt), que, después, será evaluado.
+
+Además, también se evalúa, si es necesario, el contenido de los sucesivos
+ficheros de la base de datos ("patients.txt") generados por el programa.
+
+Tras cada prueba, con número XX, los ficheros creados son renombrados
+como sigue:
+
+- patients.txt -> my_patientsXX.txt
+
+La salida correcta por pantalla debería ser como la siguiente:
+
+------------------------------------------------------------------------------
+
+Protocolo para evaluar un programa que contiene la versión de divoc
+del proyecto Divoc
+
+El programa se llama: "divoc"
+
+Limpiamos el escenario
+rm -f divoc *.o *.bak
+
+Construimos la aplicación
+gcc -Wall -c database.c
+gcc -Wall -c inout.c
+gcc -Wall inout.o database.o divoc.c -o divoc
+
+
+Ejecutamos la batería de pruebas
+
+Prueba número 0: ./divoc < proto00.txt > my_output00.txt
+Condiciones de contorno:
+A la entrada no existe el fichero de pacientes
+El usuario se limita a salir
+A la salida debe existir un fichero de pacientes vacío
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients00.txt generado por el programa que hemos evaluado
+con el patients00.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients00.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output00.txt generado por el programa que hemos evaluado
+con el output00.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output00.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 1: ./divoc < proto01.txt > my_output01.txt
+Condiciones de contorno:
+A la entrada existe un fichero de pacientes vacío
+El usuario se limita a salir
+A la salida debe existir un fichero de pacientes vacío
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients01.txt generado por el programa que hemos evaluado
+con el patients01.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients01.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output01.txt generado por el programa que hemos evaluado
+con el output01.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output01.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 2: ./divoc < proto02.txt > my_output02.txt
+Condiciones de contorno:
+A la entrada no existe el fichero de pacientes
+El usuario intenta todas las operaciones imposibles sin pacientes
+A la salida debe existir un fichero de pacientes vacío
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients02.txt generado por el programa que hemos evaluado
+con el patients02.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients02.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output02.txt generado por el programa que hemos evaluado
+con el output02.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output02.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 3: ./divoc < proto03.txt > my_output03.txt
+Condiciones de contorno:
+A la entrada existe un fichero de pacientes vacío
+El usuario teclea opciones incorrectas en el menú y en yes_or_no()
+A la salida debe existir un fichero de pacientes vacío
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients03.txt generado por el programa que hemos evaluado
+con el patients03.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients03.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output03.txt generado por el programa que hemos evaluado
+con el output03.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output03.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 4: ./divoc < proto04.txt > my_output04.txt
+Condiciones de contorno:
+A la entrada existe un fichero con 6 pacientes, copia de patientsA.base
+El usuario intenta operaciones sobre pacientes inexistentes
+A la salida debe existir el mismo fichero de pacientes
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients04.txt generado por el programa que hemos evaluado
+con el patients04.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients04.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output04.txt generado por el programa que hemos evaluado
+con el output04.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output04.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 5: ./divoc < proto05.txt > my_output05.txt
+Condiciones de contorno:
+A la entrada existe un fichero con 6 pacientes, copia de patientsB.base
+El usuario introduce datos erróneos antes de dar datos correctos
+A la salida debe existir un fichero de pacientes con 2 cambios
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients05.txt generado por el programa que hemos evaluado
+con el patients05.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients05.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output05.txt generado por el programa que hemos evaluado
+con el output05.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output05.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 6: ./divoc < proto06.txt > my_output06.txt
+Condiciones de contorno:
+A la entrada existe un fichero de pacientes vacío
+El usuario registra 80 pacientes correctos
+A la salida debe existir un fichero de pacientes idéntico a patientsC.base
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients06.txt generado por el programa que hemos evaluado
+con el patients06.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients06.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output06.txt generado por el programa que hemos evaluado
+con el output06.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output06.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 7: ./divoc < proto07.txt > my_output07.txt
+Condiciones de contorno:
+A la entrada existe un fichero con 80 pacientes, copia de patientsC.base
+El usuario realiza una serie de cambios
+A la salida debe existir un fichero de pacientes con varios cambios
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients07.txt generado por el programa que hemos evaluado
+con el patients07.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients07.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output07.txt generado por el programa que hemos evaluado
+con el output07.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output07.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 8: ./divoc < proto08.txt > my_output08.txt
+Condiciones de contorno:
+A la entrada existe un fichero con 6 pacientes, copia de patientsB.base
+El usuario da de baja a todos los pacientes
+A la salida debe existir un fichero de pacientes vacío
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients08.txt generado por el programa que hemos evaluado
+con el patients08.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients08.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output08.txt generado por el programa que hemos evaluado
+con el output08.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output08.txt es correcto
+
+Pulsa enter para continuar...
+
+Prueba número 9: ./divoc < proto09.txt > my_output09.txt
+Condiciones de contorno:
+A la entrada existe un fichero con 3 pacientes, copia de patientsD.base
+El usuario da de baja a todos los pacientes, intenta operaciones imposibles, y da de alta a 3 nuevos
+A la salida debe existir un fichero con 3 nuevos pacientes
+
+Comprobaciones:
+Comparamos:
+el fichero my_patients09.txt generado por el programa que hemos evaluado
+con el patients09.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_patients09.txt es correcto
+
+Pulsa enter para continuar...
+
+Comparamos:
+el fichero my_output09.txt generado por el programa que hemos evaluado
+con el output09.txt que debería haberse generado,
+y mostramos las diferencias (si las hay)
+
+El fichero my_output09.txt es correcto
+
+Pulsa enter para continuar...
+
+
+Todas las pruebas se han superado correctamente
+
+------------------------------------------------------------------------------
+
+En caso de que el comportamiento del programa no sea conforme a las
+especificaciones, las secciones de "Comparamos los ficheros..." mostrarán las
+diferencias entre lo que produce el programa y lo que debería producir.
+

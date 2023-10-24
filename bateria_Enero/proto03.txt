@@ -1,0 +1,38 @@
+0
+q
+;
+ 
+    
+
+Register
+Search
+Discharge
+List
+Mark
+exit
+R S D
+dlm
+      r
+      s
+      d
+      l
+      m
+      x
+x
+p
+q
+:
+no
+yes
+n y
+y n
+yn
+ny
+ 
+    
+
+        s
+        n
+n
+X
+y

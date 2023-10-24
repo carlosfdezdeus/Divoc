@@ -1,0 +1,146 @@
+--------------------------------------------------
+|                     DIVOC_                     |
+--------------------------------------------------
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Register
+
+Name (1-24 char): 
+Name (1-24 char): 
+Name (1-24 char): 
+Name (1-24 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+Invalid DNI
+DNI (9-9 char): 
+Invalid DNI
+DNI (9-9 char): 
+Invalid DNI
+DNI (9-9 char): 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Fever (y/n): 
+Fever (y/n): 
+Fever (y/n): 
+Fever (y/n): 
+Fever (y/n): 
+Fever (y/n): 
+Fever (y/n): 
+Fever (y/n): 
+Fever (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Cough (y/n): 
+Symptom (FSTMN): 
+Symptom (FSTMN): 
+Symptom (FSTMN): 
+Symptom (FSTMN): 
+Symptom (FSTMN): 
+Symptom (FSTMN): 
+Symptom (FSTMN): 
+Symptom (FSTMN): 
+New patient:
+>this_is_24_characters_OK;11111111H;1984;1;0;F;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Search
+
+DNI (9-9 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+Patient data:
+>this_is_24_characters_OK;11111111H;1984;1;0;F;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Discharge
+
+DNI (9-9 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+DNI (9-9 char): 
+Discharged patient
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+List
+
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Date [1900-2020]: 
+Patients born before 1984:
+>             Luisa_Costa;24680246G;1961;0;1;T;
+>            Angel_Garcia;13579135G;1942;1;0;S;
+>            Maria_Pelaez;11223344B;1983;1;1;M;
+>this_is_24_characters_OK;11111111H;1984;1;0;F;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Exit
+
+Are you sure you want to exit the program? (y/n): 

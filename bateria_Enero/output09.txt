@@ -1,0 +1,213 @@
+--------------------------------------------------
+|                     DIVOC_                     |
+--------------------------------------------------
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Discharge
+
+DNI (9-9 char): 
+Discharged patient
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Discharge
+
+DNI (9-9 char): 
+Discharged patient
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Discharge
+
+DNI (9-9 char): 
+Discharged patient
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Search
+
+No patients yet
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Discharge
+
+No patients yet
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+List
+
+No patients yet
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Positives
+
+No patients yet
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Register
+
+Name (1-24 char): 
+DNI (9-9 char): 
+Date [1900-2020]: 
+Fever (y/n): 
+Cough (y/n): 
+Symptom (FSTMN): 
+New patient:
+>            Angel_Garcia;13579135G;1942;1;0;S;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Register
+
+Name (1-24 char): 
+DNI (9-9 char): 
+Date [1900-2020]: 
+Fever (y/n): 
+Cough (y/n): 
+Symptom (FSTMN): 
+New patient:
+>            Maria_Pelaez;11223344B;1983;1;1;M;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Register
+
+Name (1-24 char): 
+DNI (9-9 char): 
+Date [1900-2020]: 
+Fever (y/n): 
+Cough (y/n): 
+Symptom (FSTMN): 
+New patient:
+>            Angela_Lopez;34567890V;1995;0;1;F;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+List
+
+Date [1900-2020]: 
+Patients born before 1985:
+>            Angel_Garcia;13579135G;1942;1;0;S;
+>            Maria_Pelaez;11223344B;1983;1;1;M;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Positives
+
+Positive patients:
+>            Maria_Pelaez;11223344B;1983;1;1;M;
+
+
+R) Register a patient
+S) Search for a patient
+D) Discharge a patient
+L) List patients by age
+P) Mark positive
+
+X) Exit the program
+
+Choose an option (RSDLPX): 
+Exit
+
+Are you sure you want to exit the program? (y/n): 
